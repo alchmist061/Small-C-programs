@@ -1,3 +1,5 @@
+//C program to change a string to uppercase
+
 #include <stdio.h>
 #include <stdlib.h>
 #define LIMIT 102
