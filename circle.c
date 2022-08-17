@@ -14,6 +14,6 @@ int main(){
     return 0;
 }
 //key-note from the program
-/* x += will make it longer and y+= will stretch it*/
+/* x +=(value) can change length and y+= can change horizontal length*/
 //sq(r) + const gives us a range of acceptance of points (necessary, feels great to play with it)
 
