@@ -1,32 +1,35 @@
-//C program to change a string to uppercase
+/* chanegs the whole string to uppercase but preserves the main input string*/
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
+
 #define LIMIT 102
 
-char *capital(char *);
-
+char *capital(const char *);
 
 int main(int argc, char **argv){
     char *str;
-    str = (char *) malloc(sizeof(char)*100+1);
+    str = (char *) malloc(sizeof(char)*LIMIT+1);
     puts("Enter your string: ");
     fgets(str,LIMIT,stdin);
-    printf("your string in capital is:\n%s",capital(str));
+    printf("\nYour string in capital is:\n%s",capital(str));
+    printf("\nYour original string is:\n%s",str);
     free(str);
     return 0;
 }
 
-char *capital(char *arr){
-    int b=0;
-    while(*(arr+b) != '\0'){
-        if(*(arr+b)>=97 && *(arr+b) <= 122)
-            *(arr+b) -= 32;
-        else
-            *(arr+b) = *(arr+b);
-        b++;
+char *capital(const char *new){
+    char *base;int i=0;
+    base = malloc(strlen(new)+1);
+    if(strcpy(base,new) == NULL)
+        printf("Error with strcpy");
+    while(*base != '\0'){
+        if(*base>=97 && *base <= 122)
+            *base -= 32;
+        base++,i++;
     }
-    return arr;
+    free(base);
+    return (base-i);
 }
-
 
