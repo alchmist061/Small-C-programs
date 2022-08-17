@@ -29,7 +29,7 @@ char *capital(const char *new){
             *base -= 32;
         base++,i++;
     }
-    free(base);
     return (base-i);
+    free(base);
 }
 
