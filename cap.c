@@ -1,4 +1,4 @@
-/* chanegs the whole string to uppercase but preserves the main input string*/
+/* changes the whole string to uppercase but preserves the main input string*/
 
 #include <stdio.h>
 #include <stdlib.h>
