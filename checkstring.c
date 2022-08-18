@@ -1,3 +1,4 @@
+/* returns 1 if the strings are 1 to 1 equal else 0 if they aren't*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
