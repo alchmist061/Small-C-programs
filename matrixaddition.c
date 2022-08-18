@@ -1,3 +1,4 @@
+//matrix addition using pointer of pointer
 #include <stdio.h>
 #include <stdlib.h>
 void add(int **,int **,int,int);
