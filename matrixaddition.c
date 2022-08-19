@@ -36,8 +36,3 @@ void add(int **a, int **b, int rows, int column){
         printf("\n");
     }
 }
-
-
-
-
-
