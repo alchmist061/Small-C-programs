@@ -1,4 +1,3 @@
-//matrix addition using pointer of pointer
 #include <stdio.h>
 #include <stdlib.h>
 void add(int **,int **,int,int);
@@ -28,20 +27,17 @@ int main(){
 }
 
 void add(int **a, int **b, int rows, int column){
-    int **sum,i,j;
-    sum = (int **) malloc(sizeof(int)*rows);
-    for(i=0;i<rows;i++)
-        rows[sum] = (int *) malloc(sizeof(int)*column);
+    int i,j;
     printf("The sum of your given matrixes is:\n");
     for(i=0;i<rows;i++){
         for(j=0;j<column;j++){
-            sum[i][j] = a[i][j] + b[i][j];
-            printf("%d\t",sum[i][j]);
+            printf("%d\t",a[i][j]+b[i][j]);
         }
         printf("\n");
     }
-    free(sum);
 }
+
+
 
 
 
